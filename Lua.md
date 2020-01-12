@@ -164,13 +164,18 @@ io.close(file)
 
 ### 完全模式
 ```lua
-
+file = open("file_name", "r")
+print(file:read())
+file:close()
+file = open("file_name", "a")
+file:write("test line")
+file:close()
 ```
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLT
-EwMzA1Njc2NzgsMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQx
-MzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0OD
-UzNzYsOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbMTM3NTg2NTc0MCwtMTI0NDk4ODc1OCwtMj
+EwMzM0NTM5NCwtMTAzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkx
+MzQ4ODcxLDYwNDEzOTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNz
+M4NywtMTUwMjQ4NTM3Niw5ODUyODgxNTldfQ==
 -->
