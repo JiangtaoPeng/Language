@@ -60,7 +60,8 @@ oop
 
 ## Closure闭包
 - 函数外包，内嵌具有传递性
-- nei qian
+- 词法定界lexical scoping：内嵌函数f2可以访问外包函数f1已经创建的所有局部变量
+- 外部局部变量external local  variable/up
 ## Coroutine
 - 线程与协同程序的主要区别在于，一个具有多个线程的程序可以同时运行几个线程，而协同程序却需要彼此协作的运行
 - 在任一指定时刻只有一个协同程序在运行，并且这个正在运行的协同程序只有在明确的被要求挂起的时候才会被挂起
@@ -102,6 +103,6 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzk1ODEwNjgsLTE1MDI0ODUzNzYsOT
-g1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbMzYyOTMxMTE0LC0xNTAyNDg1Mzc2LDk4NT
+I4ODE1OV19
 -->
