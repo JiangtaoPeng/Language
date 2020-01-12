@@ -141,6 +141,7 @@ function send(x)
 end
 
 function receive()
+	-- 先生产，再消费
 	local status, value = coroutine.resume(newProducer)
 	return value
 end
@@ -152,7 +153,8 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzA1Njc2NzgsMTA3MDg5OTE4MiwtMT
-U5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEz
-MDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbLTIxMDMzNDUzOTQsLTEwMzA1Njc2NzgsMT
+A3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2
+OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MT
+U5XX0=
 -->
