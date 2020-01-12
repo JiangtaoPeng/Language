@@ -149,12 +149,16 @@ end
 newProducer = coroutine.create(producer)
 consumer()
 ```
-## 文件
+## 文件I/O
+### 简单模式
+```lua
+
+```
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4MjIwNTczLC0yMTAzMzQ1Mzk0LC0xMD
-MwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5
-MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mz
-c2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbMTA4MjIyMDM1OCwtMjEwMzM0NTM5NCwtMT
+AzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEz
+OTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NT
+M3Niw5ODUyODgxNTldfQ==
 -->
