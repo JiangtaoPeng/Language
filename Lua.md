@@ -152,20 +152,25 @@ consumer()
 ## 文件I/O
 ### 简单模式
 ```lua
-file = open("file_name", "r")
+file = io.open("file_name", "r")
 io.input(file)
 print(io.read())
-io.close(fi)
-file = open("file_name", "a")
+io.close(file)
+file = io.open("file_name", "a")
 io.output(file)
 io.write("test line")
-io.close()
+io.close(file)
+```
+
+### 完全模式
+```lua
+
 ```
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMDIzNzIxNCwtMjEwMzM0NTM5NCwtMT
-AzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEz
-OTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NT
-M3Niw5ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTEyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLT
+EwMzA1Njc2NzgsMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQx
+MzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0OD
+UzNzYsOTg1Mjg4MTU5XX0=
 -->
