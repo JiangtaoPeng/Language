@@ -66,6 +66,7 @@ oop
 - 函数是编译时的概念是静态的，闭包是运行期的概念，是动态的
 - 在外包函数还存在时，upvalue都存在在外包函数的堆栈上，闭包引用指向这个堆栈的函数，但当外包函数消失时，闭包函数会为它分配新的内存空间
 - 同一个外包函数里，同一层级的内嵌函数的upvalue是共享内存的
+- 闭包常用的应用就是计数器
 ## Coroutine
 - 线程与协同程序的主要区别在于，一个具有多个线程的程序可以同时运行几个线程，而协同程序却需要彼此协作的运行
 - 在任一指定时刻只有一个协同程序在运行，并且这个正在运行的协同程序只有在明确的被要求挂起的时候才会被挂起
@@ -107,6 +108,6 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLT
-E1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0xMz
+UxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
 -->
