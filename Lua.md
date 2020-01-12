@@ -1,4 +1,5 @@
 # Lua
+- Lua语言的定位就是一种胶水式的动态语言/脚本语言
 ## 优势
 轻量级
 可扩展性
@@ -94,5 +95,5 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbMTU4NTI3OTEzNCw5ODUyODgxNTldfQ==
 -->
