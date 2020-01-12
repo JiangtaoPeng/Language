@@ -78,38 +78,42 @@ oop
 - coroutine.resume()
 - coroutine.yield()
 - coroutine.status() - running/suspended/normal/dead
-**input**
-```lua
-local co
-local co2 = coroutine.create(function() print("3."..coroutine.status(co)) end)
-co = coroutine.create(
-	function ()
-		print(type(coroutine.status(co)))
-		print(type(coroutine.running()))
-		print("2."..coroutine.status(co))
-		print(coroutine.running())
-		coroutine.resume(co2)
-		coroutine.yield()
-	end)
-print("1."..coroutine.status(co))
-coroutine.resume(co)
-print("4."..coroutine.status(co))
-coroutine.resume(co)
-print("5."..coroutine.status(co))
-```
-**output**
-```lua
-1.suspended
-string
-thread
-2.running
-thread: 0x986dd0
-3.normal
-4.suspended
-5.dead
-```
+	**input**
+	```lua
+	local co
+	local co2 = coroutine.create(function() print("3."..coroutine.status(co)) end)
+	co = coroutine.create(
+		function ()
+			print(type(coroutine.status(co)))
+			print(type(coroutine.running()))
+			print("2."..coroutine.status(co))
+			print(coroutine.running())
+			coroutine.resume(co2)
+			coroutine.yield()
+		end)
+	print("1."..coroutine.status(co))
+	coroutine.resume(co)
+	print("4."..coroutine.status(co))
+	coroutine.resume(co)
+	print("5."..coroutine.status(co))
+	```
+	**output**
+	```lua
+	1.suspended
+	string
+	thread
+	2.running
+	thread: 0x986dd0
+	3.normal
+	4.suspended
+	5.dead
+	```
+- coroutine.wrap(f)
+	```lua
+	
+	```
 ### 生产者和消费者
-```
+```lua
 local newProducer
 
 function producer()
@@ -143,7 +147,7 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY5NDg2NTE1LDEwNzA4OTkxODIsLTE1OT
-EzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3
-Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbLTEwMTIwNzc2MjcsMTA3MDg5OTE4MiwtMT
+U5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEz
+MDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
 -->
