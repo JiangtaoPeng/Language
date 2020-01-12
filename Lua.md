@@ -188,12 +188,13 @@ add(10)
 error(message[, level])
 ```
 ### pcall, xpcall, debug
-- pcall - protected call 以bao
-- xpcall - 
+- pcall - protected call 以保护模式调用第一个参数，pcall返回时已经销毁了调用栈的部分内容
+- xpcall - xpcall第二个参数接受错误处理函数 ，当错误发生时，lua会在调用栈展开前调用错误处理函数
+- debug
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjMwNzg2OSwxMzc1ODY1NzQwLC0xMj
+eyJoaXN0b3J5IjpbLTg0ODc0NjI1OSwxMzc1ODY1NzQwLC0xMj
 Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
 OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
 cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
