@@ -62,7 +62,8 @@ oop
 - 函数外包，内嵌具有传递性
 - 词法定界lexical scoping：内嵌函数f2可以访问外包函数f1已经创建的所有局部变量
 - 外部局部变量external local  variable/upvalue
-- 闭包：lua在编译一个函数时，会为它生成一个原型(prototype)，其中包含了函数体对应的虚拟机指令/函数用到的常数值和一些调试信息。在运行时，每当lua执行一个形如function...end的 表达式时，它就会创建一个新的数据对象，其中包含了相应函数原型的引用/环境（用来查找全局变量的表）的yin yo
+- 闭包：lua在编译一个函数时，会为它生成一个原型(prototype)，其中包含了函数体对应的虚拟机指令/函数用到的常数值和一些调试信息。在运行时，每当lua执行一个形如function...end的 表达式时，它就会创建一个新的数据对象，其中包含了相应函数原型的引用/环境（用来查找全局变量的表）的引用以及一个由所有upvalue引用组成的数组，而这个数据对象就是闭包
+- 函数是编译时的概念是静态的，闭包是运行期的概念，是动态的
 ## Coroutine
 - 线程与协同程序的主要区别在于，一个具有多个线程的程序可以同时运行几个线程，而协同程序却需要彼此协作的运行
 - 在任一指定时刻只有一个协同程序在运行，并且这个正在运行的协同程序只有在明确的被要求挂起的时候才会被挂起
@@ -104,6 +105,6 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MjY2NzQ0NCwtMTUwMjQ4NTM3Niw5OD
-UyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTEzNTEzMDczODcsLTE1MDI0ODUzNzYsOT
+g1Mjg4MTU5XX0=
 -->
