@@ -172,11 +172,24 @@ file:write("test line")
 file:close()
 ```
 
-## cu
+## 错误处理
+### assert
+```lua
+function add(a, b)
+	assert(type(a)=="number", "a is not a number")
+	assert(type(b)=="number", "b is not a number")
+	return a+b
+end
+add(10)
+```
+### error
+```lua
+
+```
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTcyOTk4NCwxMzc1ODY1NzQwLC0xMj
+eyJoaXN0b3J5IjpbMTkxNzQ4OTc1MSwxMzc1ODY1NzQwLC0xMj
 Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
 OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
 cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
