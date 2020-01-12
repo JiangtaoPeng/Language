@@ -2,8 +2,10 @@
 - Lua语言的定位是一种胶水式的动态语言/脚本语言，用来控制其他语言编写的其他组件
 - 脚本语言可嵌入，轻量，快速，开发周期短
 - 用table表示所有东西
-- lua解释器的核心部分是独立的应用程序(freestanding application)，容易限制程序对外部资源的f
-- 
+- lua解释器的核心部分是独立的应用程序(freestanding application)，容易限制程序对外部资源的访问
+- lua还提供了用户自定义调试钩子去监视lua程序的运行状态
+- 垃圾回收 - 标记清除
+- luashi yo
 ## 优势
 轻量级
 可扩展性
@@ -99,5 +101,5 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODkxMjgyNyw5ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTcwODg4MTM2MSw5ODUyODgxNTldfQ==
 -->
