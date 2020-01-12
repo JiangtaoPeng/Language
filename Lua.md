@@ -183,15 +183,17 @@ end
 add(10)
 ```
 ### error
+终止zheng
 ```lua
-
+error(message[, level])
 ```
+
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzQ4OTc1MSwxMzc1ODY1NzQwLC0xMj
-Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
-OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
-cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbOTMxNTEyNjg5LDEzNzU4NjU3NDAsLTEyND
+Q5ODg3NTgsLTIxMDMzNDUzOTQsLTEwMzA1Njc2NzgsMTA3MDg5
+OTE4MiwtMTU5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3Nz
+AsLTEzNTEzMDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
 
 -->
