@@ -77,7 +77,7 @@ oop
 - coroutine.create()
 - coroutine.resume()
 - coroutine.yield()
-- coroutine.status()
+- coroutine.status() - 
 ### 生产者和消费者
 ```
 local newProducer
@@ -113,7 +113,7 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMz
-AyNjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4
-ODE1OV19
+eyJoaXN0b3J5IjpbNTkyODk2NzY2LC0xNTkxMzQ4ODcxLDYwND
+EzOTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4
+NTM3Niw5ODUyODgxNTldfQ==
 -->
