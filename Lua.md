@@ -114,7 +114,8 @@ oop
 	coroutine.resume(g1, "input_string")
 	local g2 = coroutine.wrap(f)
 	g2("input_string")
-	-- 两者功能yi zhi
+	-- 两者功能一致，但resume是保护模式，wrap则不是，当发现错误，直接抛出错误
+	-- resume会返回布尔值，wrap则无需bool值，因为直接抛出错误
 	```
 ### 生产者和消费者
 ```lua
@@ -151,7 +152,7 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MDQ4MDM2OCwxMDcwODk5MTgyLC0xNT
-kxMzQ4ODcxLDYwNDEzOTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMw
-NzM4NywtMTUwMjQ4NTM3Niw5ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTEwMzA1Njc2NzgsMTA3MDg5OTE4MiwtMT
+U5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEz
+MDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
 -->
