@@ -68,12 +68,16 @@ oop
 - 同一个外包函数里，同一层级的内嵌函数的upvalue是共享内存的
 - 闭包常用的应用就是计数器
 ## Coroutine
-### 
+### 概念
 - 线程与协同程序的主要区别在于，一个具有多个线程的程序可以同时运行几个线程，而协同程序却需要彼此协作的运行
 - 在任一指定时刻只有一个协同程序在运行，并且这个正在运行的协同程序只有在明确的被要求挂起的时候才会被挂起
 - 协同程序有点类似同步的多线程，在等待同一个线程锁的几个线程有点类似协同
 - 多线程技术主要是基于抢占式内存共享，而协程则通过去掉抢占式或者不共享内存来回避a=a+1都没有确定结果的问题
-
+### 接口
+- coroutine.create()
+- coroutine.resume()
+- coroutine.yield()
+- coroutine.status()
 ### 生产者和消费者
 ```
 local newProducer
@@ -109,7 +113,7 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTc4MDIxNDcsNjA0MTM5MDIyLC0xMz
+eyJoaXN0b3J5IjpbLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMz
 AyNjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4
 ODE1OV19
 -->
