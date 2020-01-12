@@ -78,6 +78,7 @@ oop
 - coroutine.resume()
 - coroutine.yield()
 - coroutine.status() - running/suspended/normal/dead
+
 ### 生产者和消费者
 ```
 local newProducer
@@ -113,7 +114,7 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MD
-QxMzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0
-ODUzNzYsOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbLTExNjkzMjU4MjQsMTA3MDg5OTE4MiwtMT
+U5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEz
+MDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
 -->
