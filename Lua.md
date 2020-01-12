@@ -183,17 +183,19 @@ end
 add(10)
 ```
 ### error
-终止zheng
+终止正在进行的程序，并返回message的内容作为错误信息
 ```lua
 error(message[, level])
 ```
-
+### pcall, xpcall, debug
+- pcall - protected call 以bao
+- xpcall - 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxNTEyNjg5LDEzNzU4NjU3NDAsLTEyND
-Q5ODg3NTgsLTIxMDMzNDUzOTQsLTEwMzA1Njc2NzgsMTA3MDg5
-OTE4MiwtMTU5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3Nz
-AsLTEzNTEzMDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbMTIyMjMwNzg2OSwxMzc1ODY1NzQwLC0xMj
+Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
+OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
+cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
 
 -->
