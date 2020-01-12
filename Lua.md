@@ -75,7 +75,7 @@ oop
 - 多线程技术主要是基于抢占式内存共享，而协程则通过去掉抢占式或者不共享内存来回避a=a+1都没有确定结果的问题
 ### 接口
 - coroutine.create()
-- coroutine.resume() 保护模式运行，不会抛出错误，返回fa l s
+- coroutine.resume() 保护模式运行，不会抛出错误，返回false+错误信息，同时协程的状态变成dead
 - coroutine.yield()
 - coroutine.status() - running/suspended/normal/dead
 	**input**
@@ -110,7 +110,11 @@ oop
 	```
 - coroutine.wrap(f)
 	```lua
-	
+	local g1 = coroutine.create(f)
+	coroutine.resume(g1, "input_string")
+	local g2 = coroutine.wrap(f)
+	g2("input_string")
+	-- 两者功能yi zhi
 	```
 ### 生产者和消费者
 ```lua
@@ -147,7 +151,7 @@ consumer()
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2Mjc2ODQsMTA3MDg5OTE4MiwtMTU5MT
-M0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEzMDcz
-ODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbMTY4MDQ4MDM2OCwxMDcwODk5MTgyLC0xNT
+kxMzQ4ODcxLDYwNDEzOTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMw
+NzM4NywtMTUwMjQ4NTM3Niw5ODUyODgxNTldfQ==
 -->
