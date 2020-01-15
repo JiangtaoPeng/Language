@@ -245,16 +245,17 @@ error(message[, level])
 	print -> io.write
 	table.insert尾部插入 
 
+## Metatable
 
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyNjc4Mzk4LC0yMjgzNjk4ODYsNzY1ND
-k2MTk2LDMxODk1NDUyMCwtMjAzMDUwMjQ3MCw4MjQyNTM2NDQs
-LTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMjQ0OTg4NzU4LC0yMT
-AzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEz
-NDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mz
-g3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbMTQ3MDIxNjY0MywtMjI4MzY5ODg2LDc2NT
+Q5NjE5NiwzMTg5NTQ1MjAsLTIwMzA1MDI0NzAsODI0MjUzNjQ0
+LC0yNDExNjE3NDAsMTM3NTg2NTc0MCwtMTI0NDk4ODc1OCwtMj
+EwMzM0NTM5NCwtMTAzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkx
+MzQ4ODcxLDYwNDEzOTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNz
+M4NywtMTUwMjQ4NTM3Niw5ODUyODgxNTldfQ==
 -->
