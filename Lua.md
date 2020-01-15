@@ -194,12 +194,17 @@ error(message[, level])
 	- debug.debug()
 	- debug.traceback()
 
-## LuaJITxing n
+## LuaJIT性能优化
+1. 减少不可预测的分之代码
+
+2. 使用FFI实现数据结构
+
+3. 用FFI调用C函数
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5MjI3NTIzLC0yNDExNjE3NDAsMTM3NT
+eyJoaXN0b3J5IjpbODI0MjUzNjQ0LC0yNDExNjE3NDAsMTM3NT
 g2NTc0MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMTAzMDU2
 NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEzOTAyMi
 wtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NTM3Niw5
