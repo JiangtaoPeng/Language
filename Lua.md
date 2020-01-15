@@ -247,16 +247,22 @@ error(message[, level])
 
 ## Metatable
 - lua table可以通过访问对应key来得到value的值，但无法对两个table进行操作。metatable则允许改变table的行为，每个行为关联了对应的元方法
-- setmetatable(table, metatable)：对指定table设置元表，如果元表中存在_metatable键值，则
+- setmetatable(table, metatable)：对指定table设置元表，如果元表中存在_metatable键值，则set失败
+	```lua
+	table = {}
+	metatable = {}
+	mytable = setmetatable(table, me)
+	```
+- getmetatable(table)：返回table对象的元表
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjYwNTM2NSwtMjI4MzY5ODg2LDc2NT
-Q5NjE5NiwzMTg5NTQ1MjAsLTIwMzA1MDI0NzAsODI0MjUzNjQ0
-LC0yNDExNjE3NDAsMTM3NTg2NTc0MCwtMTI0NDk4ODc1OCwtMj
-EwMzM0NTM5NCwtMTAzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkx
-MzQ4ODcxLDYwNDEzOTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNz
-M4NywtMTUwMjQ4NTM3Niw5ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbODI4ODQwNDkxLC0yMjgzNjk4ODYsNzY1ND
+k2MTk2LDMxODk1NDUyMCwtMjAzMDUwMjQ3MCw4MjQyNTM2NDQs
+LTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMjQ0OTg4NzU4LC0yMT
+AzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEz
+NDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mz
+g3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
 -->
