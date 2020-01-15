@@ -264,14 +264,22 @@ print(t.foo)
 print(t.bar)
 -- nil
 ```
+Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
+
+-   1.在表中查找，如果找到，返回该元素，找不到则继续
+-   2.判断该表是否有元表，如果没有元表，返回 nil，有元表则继续。
+-   3.判断元表有没有 __index 方法，如果 __index 方法为 nil，则返回 nil；如果 __index 方法是一个表，则重复 1、2、3；如果 __index 方法是一个函数，则返回该函数的返回值。
+
+
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5Njc0NTgyNCwtMjI4MzY5ODg2LDc2NT
-Q5NjE5NiwzMTg5NTQ1MjAsLTIwMzA1MDI0NzAsODI0MjUzNjQ0
-LC0yNDExNjE3NDAsMTM3NTg2NTc0MCwtMTI0NDk4ODc1OCwtMj
-EwMzM0NTM5NCwtMTAzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkx
-MzQ4ODcxLDYwNDEzOTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNz
-M4NywtMTUwMjQ4NTM3Niw5ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTYxMzQyNDgzNiwtNTk2NzQ1ODI0LC0yMj
+gzNjk4ODYsNzY1NDk2MTk2LDMxODk1NDUyMCwtMjAzMDUwMjQ3
+MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMj
+Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
+OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
+cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
+
 -->
