@@ -211,15 +211,17 @@ error(message[, level])
 		ms.sin(1)
 		end
 	```
-	math本身是一个表，math.sin本身会做一次表查找，这里会做一次消耗，而math又是一个全局变量，还要在全局表中做一次math的查找。而ms缓存过后，就省略了math.sin的查找 ，另外function上一层的变量，lua会有一个upvalue对象进行存储，在函数中找msbian
+	math本身是一个表，math.sin本身会做一次表查找，这里会做一次消耗，而math又是一个全局变量，还要在全局表中做一次math的查找。而ms缓存过后，就省略了math.sin的查找 ，另外function上一层的变量，lua会有一个upvalue对象进行存储，在函数中找ms变量只需要在upvalue对象内找，查找范围更小更快捷
+
+6. 避免使用自己实现的分发调用机制，尽量使用内建如metatable这样的机制
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTc2OTYyNSwtMjAzMDUwMjQ3MCw4Mj
-QyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMjQ0OTg4
-NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4OTkxOD
-IsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0x
-MzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbMzE4OTU0NTIwLC0yMDMwNTAyNDcwLDgyND
+I1MzY0NCwtMjQxMTYxNzQwLDEzNzU4NjU3NDAsLTEyNDQ5ODg3
+NTgsLTIxMDMzNDUzOTQsLTEwMzA1Njc2NzgsMTA3MDg5OTE4Mi
+wtMTU5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3NzAsLTEz
+NTEzMDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
 -->
