@@ -232,7 +232,7 @@ error(message[, level])
 
 8. 对于引用别名的表达子式，编译器会放弃优化
 	```lua
-	
+	x
 	```
 
 
@@ -240,7 +240,7 @@ error(message[, level])
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjIyMjY2MSw3NjU0OTYxOTYsMzE4OT
+eyJoaXN0b3J5IjpbLTg2NDg3MDc2Myw3NjU0OTYxOTYsMzE4OT
 U0NTIwLC0yMDMwNTAyNDcwLDgyNDI1MzY0NCwtMjQxMTYxNzQw
 LDEzNzU4NjU3NDAsLTEyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLT
 EwMzA1Njc2NzgsMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQx
