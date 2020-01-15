@@ -274,15 +274,17 @@ Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
 ### __newindex
 - __newindex方法用来更新表
 - 在对表的缺少的索引赋值时，解释器就会查找__newindex方法，调用这个方法，而不是进行赋值操作
-- 
+
+### __call
+- 元表中定义了__call方法后，可以
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTI4MjMwMywtNTk2NzQ1ODI0LC0yMj
-gzNjk4ODYsNzY1NDk2MTk2LDMxODk1NDUyMCwtMjAzMDUwMjQ3
-MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMj
-Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
-OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
-cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
-
+eyJoaXN0b3J5IjpbNDcwODI4MTMzLC05NjEyODIzMDMsLTU5Nj
+c0NTgyNCwtMjI4MzY5ODg2LDc2NTQ5NjE5NiwzMTg5NTQ1MjAs
+LTIwMzA1MDI0NzAsODI0MjUzNjQ0LC0yNDExNjE3NDAsMTM3NT
+g2NTc0MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMTAzMDU2
+NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEzOTAyMi
+wtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NTM3Niw5
+ODUyODgxNTldfQ==
 -->
