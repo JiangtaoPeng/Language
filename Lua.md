@@ -232,7 +232,12 @@ error(message[, level])
 
 8. 对于引用别名的表达子式，编译器会放弃优化
 	```lua
-	x
+	x[i] = a[i] + b[i]
+	y[i] = a[i] + c[i]
+	-- luajit不会优化,y成
+	d = a[i]
+	x[i] = d + b[i]
+	y[i] = d + c[i]
 	```
 
 
@@ -240,10 +245,10 @@ error(message[, level])
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDg3MDc2Myw3NjU0OTYxOTYsMzE4OT
-U0NTIwLC0yMDMwNTAyNDcwLDgyNDI1MzY0NCwtMjQxMTYxNzQw
-LDEzNzU4NjU3NDAsLTEyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLT
-EwMzA1Njc2NzgsMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQx
-MzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0OD
-UzNzYsOTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbLTExMzAxMDIyMTUsNzY1NDk2MTk2LDMxOD
+k1NDUyMCwtMjAzMDUwMjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0
+MCwxMzc1ODY1NzQwLC0xMjQ0OTg4NzU4LC0yMTAzMzQ1Mzk0LC
+0xMDMwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEzNDg4NzEsNjA0
+MTM5MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyND
+g1Mzc2LDk4NTI4ODE1OV19
 -->
