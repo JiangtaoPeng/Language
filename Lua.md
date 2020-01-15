@@ -256,7 +256,7 @@ error(message[, level])
 	```
 - getmetatable(table)：返回table对象的元表
 ### __index
-__i
+__index方法用来访问表
 ```lua
 idxs = {foo = 3}
 t = setmetatable({}, {__index = idxs})
@@ -272,15 +272,15 @@ Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
 -   3.判断元表有没有 __index 方法，如果 __index 方法为 nil，则返回 nil；如果 __index 方法是一个表，则重复 1、2、3；如果 __index 方法是一个函数，则返回该函数的返回值。
 
 ### __newindex
-
+__newindex方法用来更新表
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4MTI3ODAsLTU5Njc0NTgyNCwtMjI4Mz
-Y5ODg2LDc2NTQ5NjE5NiwzMTg5NTQ1MjAsLTIwMzA1MDI0NzAs
-ODI0MjUzNjQ0LC0yNDExNjE3NDAsMTM3NTg2NTc0MCwtMTI0ND
-k4ODc1OCwtMjEwMzM0NTM5NCwtMTAzMDU2NzY3OCwxMDcwODk5
-MTgyLC0xNTkxMzQ4ODcxLDYwNDEzOTAyMiwtMTMwMjY5Mjc3MC
-wtMTM1MTMwNzM4NywtMTUwMjQ4NTM3Niw5ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTYyMTkxNDYxMiwtNTk2NzQ1ODI0LC0yMj
+gzNjk4ODYsNzY1NDk2MTk2LDMxODk1NDUyMCwtMjAzMDUwMjQ3
+MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMj
+Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
+OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
+cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
 
 -->
