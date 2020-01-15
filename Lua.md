@@ -32,6 +32,7 @@ oop
 - table
 	- "关联数组"（associative arrays）
 	- Lua 里表的默认初始索引一般以 1 开始
+	- 
 
 ### 作用域
 - 全局变量
@@ -284,11 +285,11 @@ Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDA4MzUzMSwtOTYxMjgyMzAzLC01OT
-Y3NDU4MjQsLTIyODM2OTg4Niw3NjU0OTYxOTYsMzE4OTU0NTIw
-LC0yMDMwNTAyNDcwLDgyNDI1MzY0NCwtMjQxMTYxNzQwLDEzNz
-U4NjU3NDAsLTEyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLTEwMzA1
-Njc2NzgsMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQxMzkwMj
-IsLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0ODUzNzYs
-OTg1Mjg4MTU5XX0=
+eyJoaXN0b3J5IjpbOTUyNDc4Mzg2LC0xNjQwODM1MzEsLTk2MT
+I4MjMwMywtNTk2NzQ1ODI0LC0yMjgzNjk4ODYsNzY1NDk2MTk2
+LDMxODk1NDUyMCwtMjAzMDUwMjQ3MCw4MjQyNTM2NDQsLTI0MT
+E2MTc0MCwxMzc1ODY1NzQwLC0xMjQ0OTg4NzU4LC0yMTAzMzQ1
+Mzk0LC0xMDMwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEzNDg4Nz
+EsNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mzg3LC0x
+NTAyNDg1Mzc2XX0=
 -->
