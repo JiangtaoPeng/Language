@@ -201,15 +201,17 @@ error(message[, level])
 
 3. 用FFI调用C函数
 
-4. 循环时使用 for i=start, stop, step do ... end 或者ipairs，避免使用pairs，因为pairs无法生成机器码运行
+4. 循环时使用 for i=start, stop, step do ... end 或者ipairs，避免使用pairs，因为在luajit2.1.0beta2版本下pairs无法生成机器码运行
 
-5. 尽量只diao yon
+5. 尽量只调用local function
+
+
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MDc0NDM0MCwtMjAzMDUwMjQ3MCw4Mj
-QyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMjQ0OTg4
-NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4OTkxOD
-IsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0x
-MzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbNzAzNTg2MTIyLC0yMDMwNTAyNDcwLDgyND
+I1MzY0NCwtMjQxMTYxNzQwLDEzNzU4NjU3NDAsLTEyNDQ5ODg3
+NTgsLTIxMDMzNDUzOTQsLTEwMzA1Njc2NzgsMTA3MDg5OTE4Mi
+wtMTU5MTM0ODg3MSw2MDQxMzkwMjIsLTEzMDI2OTI3NzAsLTEz
+NTEzMDczODcsLTE1MDI0ODUzNzYsOTg1Mjg4MTU5XX0=
 -->
