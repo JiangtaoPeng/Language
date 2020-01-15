@@ -193,12 +193,15 @@ error(message[, level])
 - debug
 	- debug.debug()
 	- debug.traceback()
+
+## LuaJITxing n
+
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMj
-Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
-OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNz
-cwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4ODE1OV19
-
+eyJoaXN0b3J5IjpbNTc5MjI3NTIzLC0yNDExNjE3NDAsMTM3NT
+g2NTc0MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMTAzMDU2
+NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEzOTAyMi
+wtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NTM3Niw5
+ODUyODgxNTldfQ==
 -->
