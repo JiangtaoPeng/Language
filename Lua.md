@@ -227,17 +227,17 @@ error(message[, level])
 	...
 	```
 	表查找和metatable的查找都可以参与jit优化的，而自行实现的消息分发机制，往往会用到分支代码或其他更复杂的结构，性能上反而不如表查找+jit优化来得快
-7. luajit为了提升运行效率，local变量会尽可能的使用cpu寄存器存储。而当local变量过多时，jit会放弃编译。适当控制
+7. luajit为了提升运行效率，local变量会尽可能的使用cpu寄存器存储。而当local变量过多时，jit会放弃编译。适当控制函数作用域内的local变量时必要的
 
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDc3MTA0NywzMTg5NTQ1MjAsLTIwMz
-A1MDI0NzAsODI0MjUzNjQ0LC0yNDExNjE3NDAsMTM3NTg2NTc0
-MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMTAzMDU2NzY3OC
-wxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEzOTAyMiwtMTMw
-MjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NTM3Niw5ODUyOD
-gxNTldfQ==
+eyJoaXN0b3J5IjpbNzY1NDk2MTk2LDMxODk1NDUyMCwtMjAzMD
+UwMjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQw
+LC0xMjQ0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LD
+EwNzA4OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAy
+NjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4OD
+E1OV19
 -->
