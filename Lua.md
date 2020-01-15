@@ -214,23 +214,29 @@ error(message[, level])
 	math本身是一个表，math.sin本身会做一次表查找，这里会做一次消耗，而math又是一个全局变量，还要在全局表中做一次math的查找。而ms缓存过后，就省略了math.sin的查找 ，另外function上一层的变量，lua会有一个upvalue对象进行存储，在函数中找ms变量只需要在upvalue对象内找，查找范围更小更快捷
 
 6. 避免使用自己实现的分发调用机制，尽量使用内建如metatable这样的机制
-```lua
--- usual method
-if opcode == OP_1 then ...
-elseif opcode == OP_2 then ...
-...
+	```lua
+	-- usual method
+	if opcode == OP_1 then ...
+	elseif opcode == OP_2 then ...
+	...
 
-#
-```
+	-- good practice
+	local callbacks = {}
+	callbacks[OP_1] = function() ... end
+	callbacks[OP_2] = function() ...end
+	...
+	```
+	表查找和metatable的查找都可以参与jit优化的，而自行实现的xiao xi
+
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MzI0NDkyNCwzMTg5NTQ1MjAsLTIwMz
-A1MDI0NzAsODI0MjUzNjQ0LC0yNDExNjE3NDAsMTM3NTg2NTc0
-MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMTAzMDU2NzY3OC
-wxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEzOTAyMiwtMTMw
-MjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NTM3Niw5ODUyOD
-gxNTldfQ==
+eyJoaXN0b3J5IjpbMzQ1NzQxMzcxLDMxODk1NDUyMCwtMjAzMD
+UwMjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQw
+LC0xMjQ0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LD
+EwNzA4OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAy
+NjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mzc2LDk4NTI4OD
+E1OV19
 -->
