@@ -272,11 +272,13 @@ Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
 -   3.判断元表有没有 __index 方法，如果 __index 方法为 nil，则返回 nil；如果 __index 方法是一个表，则重复 1、2、3；如果 __index 方法是一个函数，则返回该函数的返回值。
 
 ### __newindex
-__newindex方法用来更新表
+- __newindex方法用来更新表
+- 在对表的缺少的索引赋值时，解释器就会查找__newindex方法，调用这个方法，而不是进行赋值操作
+- 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTkxNDYxMiwtNTk2NzQ1ODI0LC0yMj
+eyJoaXN0b3J5IjpbLTk2MTI4MjMwMywtNTk2NzQ1ODI0LC0yMj
 gzNjk4ODYsNzY1NDk2MTk2LDMxODk1NDUyMCwtMjAzMDUwMjQ3
 MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMj
 Q0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4
