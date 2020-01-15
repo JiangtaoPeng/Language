@@ -238,18 +238,21 @@ error(message[, level])
 	d = a[i]
 	x[i] = d + b[i]
 	y[i] = d + c[i]
-	-- 因为引用有可能是dui
+	-- 因为引用有可能是对同一个东西的引用，比如x和a其实是对同一个东西的引用
 	```
+9. 减少使用高消耗或不支持jit的操作
+	pairs -> ipairs
+	print -> io.write 
 
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyMDA5OTMsNzY1NDk2MTk2LDMxODk1ND
-UyMCwtMjAzMDUwMjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwx
-Mzc1ODY1NzQwLC0xMjQ0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMD
-MwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5
-MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mz
-c2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbNjY3OTkwMDk2LDc2NTQ5NjE5NiwzMTg5NT
+Q1MjAsLTIwMzA1MDI0NzAsODI0MjUzNjQ0LC0yNDExNjE3NDAs
+MTM3NTg2NTc0MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMT
+AzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEz
+OTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NT
+M3Niw5ODUyODgxNTldfQ==
 -->
