@@ -246,13 +246,13 @@ error(message[, level])
 	table.insert尾部插入 
 
 ## Metatable
-
+- lua table可以通过访问对应key来得到value的值，但无法对两个table进行操作。metatable则允许改变table的行为，每个行为关联了对应的元方法
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDIxNjY0MywtMjI4MzY5ODg2LDc2NT
+eyJoaXN0b3J5IjpbLTQzOTE3NjA5MSwtMjI4MzY5ODg2LDc2NT
 Q5NjE5NiwzMTg5NTQ1MjAsLTIwMzA1MDI0NzAsODI0MjUzNjQ0
 LC0yNDExNjE3NDAsMTM3NTg2NTc0MCwtMTI0NDk4ODc1OCwtMj
 EwMzM0NTM5NCwtMTAzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkx
