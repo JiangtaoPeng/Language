@@ -242,17 +242,17 @@ error(message[, level])
 	```
 9. 减少使用高消耗或不支持jit的操作
 	pairs -> ipairs
-	print -> io.write 
-
+	print -> io.write
+	table.insert尾部插入 
 
 
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3OTkwMDk2LDc2NTQ5NjE5NiwzMTg5NT
-Q1MjAsLTIwMzA1MDI0NzAsODI0MjUzNjQ0LC0yNDExNjE3NDAs
-MTM3NTg2NTc0MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMT
-AzMDU2NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEz
-OTAyMiwtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NT
-M3Niw5ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTIyODM2OTg4Niw3NjU0OTYxOTYsMzE4OT
+U0NTIwLC0yMDMwNTAyNDcwLDgyNDI1MzY0NCwtMjQxMTYxNzQw
+LDEzNzU4NjU3NDAsLTEyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLT
+EwMzA1Njc2NzgsMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQx
+MzkwMjIsLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0OD
+UzNzYsOTg1Mjg4MTU5XX0=
 -->
