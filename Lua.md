@@ -295,8 +295,10 @@ Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
 ### 调用函数前先定义函数
 lua中函数的本质是变量赋值
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDM4MzkyMiwxMDQ1NzQwNTkxLC0xNz
+eyJoaXN0b3J5IjpbLTkzMjMzODAwNiwxMDQ1NzQwNTkxLC0xNz
 gwMTc4NjE4LC0xNjQwODM1MzEsLTk2MTI4MjMwMywtNTk2NzQ1
 ODI0LC0yMjgzNjk4ODYsNzY1NDk2MTk2LDMxODk1NDUyMCwtMj
 AzMDUwMjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1
