@@ -201,11 +201,13 @@ error(message[, level])
 
 3. 用FFI调用C函数
 
-4. xunhua
+4. 循环时使用 for i=start, stop, step do ... end 或者ipairs，避免使用pairs，因为pairs无法生成机器码运行
+
+5. 尽量只diao yon
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTE2MzE1OSwtMjAzMDUwMjQ3MCw4Mj
+eyJoaXN0b3J5IjpbLTQ0MDc0NDM0MCwtMjAzMDUwMjQ3MCw4Mj
 QyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC0xMjQ0OTg4
 NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEwNzA4OTkxOD
 IsLTE1OTEzNDg4NzEsNjA0MTM5MDIyLC0xMzAyNjkyNzcwLC0x
