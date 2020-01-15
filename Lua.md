@@ -234,10 +234,11 @@ error(message[, level])
 	```lua
 	x[i] = a[i] + b[i]
 	y[i] = a[i] + c[i]
-	-- luajit不会优化,y成
+	-- luajit不会优化成：
 	d = a[i]
 	x[i] = d + b[i]
 	y[i] = d + c[i]
+	-- 因为引用有可能是dui
 	```
 
 
@@ -245,10 +246,10 @@ error(message[, level])
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzAxMDIyMTUsNzY1NDk2MTk2LDMxOD
-k1NDUyMCwtMjAzMDUwMjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0
-MCwxMzc1ODY1NzQwLC0xMjQ0OTg4NzU4LC0yMTAzMzQ1Mzk0LC
-0xMDMwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEzNDg4NzEsNjA0
-MTM5MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyND
-g1Mzc2LDk4NTI4ODE1OV19
+eyJoaXN0b3J5IjpbNjkyMDA5OTMsNzY1NDk2MTk2LDMxODk1ND
+UyMCwtMjAzMDUwMjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwx
+Mzc1ODY1NzQwLC0xMjQ0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMD
+MwNTY3Njc4LDEwNzA4OTkxODIsLTE1OTEzNDg4NzEsNjA0MTM5
+MDIyLC0xMzAyNjkyNzcwLC0xMzUxMzA3Mzg3LC0xNTAyNDg1Mz
+c2LDk4NTI4ODE1OV19
 -->
