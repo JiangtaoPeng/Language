@@ -246,6 +246,7 @@ error(message[, level])
 	table.insert尾部插入 
 
 ## Metatable
+- 在Lua中任何一个值都有Metatable, 不同的值可以有不同的Metatable也可以共享同样的Metatable, 但在Lua本身提供的功能中, 不允许你改变除了table类型值外的任何其他类型值的Metatable, 除非使用C扩展或其他库. setmetatable和getmetatable是唯一一组操作table类型的Metatable的方法.
 - lua table可以通过访问对应key来得到value的值，但无法对两个table进行操作。metatable则允许改变table的行为，每个行为关联了对应的元方法
 - setmetatable(table, metatable)：对指定table设置元表，如果元表中存在_metatable键值，则set失败
 	```lua
@@ -276,15 +277,18 @@ Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
 - 在对表的缺少的索引赋值时，解释器就会查找__newindex方法，调用这个方法，而不是进行赋值操作
 
 ### __call
-- 元表中定义了__call方法后，可以
+- 元表中定义了__call方法后，对应的就是mytable(params)
+
+
 ## OOP
 [https://github.com/dingshukai/lua-oop](https://github.com/dingshukai/lua-oop)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcwODI4MTMzLC05NjEyODIzMDMsLTU5Nj
-c0NTgyNCwtMjI4MzY5ODg2LDc2NTQ5NjE5NiwzMTg5NTQ1MjAs
-LTIwMzA1MDI0NzAsODI0MjUzNjQ0LC0yNDExNjE3NDAsMTM3NT
-g2NTc0MCwtMTI0NDk4ODc1OCwtMjEwMzM0NTM5NCwtMTAzMDU2
-NzY3OCwxMDcwODk5MTgyLC0xNTkxMzQ4ODcxLDYwNDEzOTAyMi
-wtMTMwMjY5Mjc3MCwtMTM1MTMwNzM4NywtMTUwMjQ4NTM3Niw5
-ODUyODgxNTldfQ==
+eyJoaXN0b3J5IjpbLTE2NDA4MzUzMSwtOTYxMjgyMzAzLC01OT
+Y3NDU4MjQsLTIyODM2OTg4Niw3NjU0OTYxOTYsMzE4OTU0NTIw
+LC0yMDMwNTAyNDcwLDgyNDI1MzY0NCwtMjQxMTYxNzQwLDEzNz
+U4NjU3NDAsLTEyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLTEwMzA1
+Njc2NzgsMTA3MDg5OTE4MiwtMTU5MTM0ODg3MSw2MDQxMzkwMj
+IsLTEzMDI2OTI3NzAsLTEzNTEzMDczODcsLTE1MDI0ODUzNzYs
+OTg1Mjg4MTU5XX0=
 -->
