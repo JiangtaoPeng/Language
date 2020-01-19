@@ -288,7 +288,7 @@ Lua 查找一个表元素时的规则，其实就是如下 3 个步骤:
 ### upvalue
 - L为当前线程状态lua_State
 - g为全局共享状态global_State
-- lua编译一个函数的时候，其中包含了函数体对应的虚拟机指令/函数用到的常量值和一些调试信息。在运行时，每当lua执行function...end这样的函数时，它就会创建一个新的数据对象，其中包含了 相应函数原型的引用/环境（用来查找全局变量的表）的引用以及一个由所有upvalue引用组成的数组，而这个数据对象就chen we
+- lua编译一个函数的时候，其中包含了函数体对应的虚拟机指令/函数用到的常量值和一些调试信息。在运行时，每当lua执行function...end这样的函数时，它就会创建一个新的数据对象，其中包含了 相应函数原型的引用/环境（用来查找全局变量的表）的引用以及一个由所有upvalue引用组成的数组，而这个数据对象就称为闭包
 ### 迭代器
 
 ### .和:操作
@@ -300,11 +300,11 @@ lua中函数的本质是变量赋值
 ### 函数式编程
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjkwMTcxNjksLTYzOTgzNjQyNywxNT
-U2ODM0OTc1LDI1NDk3MjgxOCwxMDQ1NzQwNTkxLC0xNzgwMTc4
-NjE4LC0xNjQwODM1MzEsLTk2MTI4MjMwMywtNTk2NzQ1ODI0LC
-0yMjgzNjk4ODYsNzY1NDk2MTk2LDMxODk1NDUyMCwtMjAzMDUw
-MjQ3MCw4MjQyNTM2NDQsLTI0MTE2MTc0MCwxMzc1ODY1NzQwLC
-0xMjQ0OTg4NzU4LC0yMTAzMzQ1Mzk0LC0xMDMwNTY3Njc4LDEw
-NzA4OTkxODJdfQ==
+eyJoaXN0b3J5IjpbLTUyNjM2NjQ5OSwtNjM5ODM2NDI3LDE1NT
+Y4MzQ5NzUsMjU0OTcyODE4LDEwNDU3NDA1OTEsLTE3ODAxNzg2
+MTgsLTE2NDA4MzUzMSwtOTYxMjgyMzAzLC01OTY3NDU4MjQsLT
+IyODM2OTg4Niw3NjU0OTYxOTYsMzE4OTU0NTIwLC0yMDMwNTAy
+NDcwLDgyNDI1MzY0NCwtMjQxMTYxNzQwLDEzNzU4NjU3NDAsLT
+EyNDQ5ODg3NTgsLTIxMDMzNDUzOTQsLTEwMzA1Njc2NzgsMTA3
+MDg5OTE4Ml19
 -->
