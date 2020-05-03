@@ -350,11 +350,11 @@ print(q.pop()) # Item('foo')
 
 ### 比较大小
 #### 原生比较
-```
+```python
 class Item():
     def __init__(self, name):
         self.name = name
-    def __repr(self):
+    def __repr__(self):
         return 'Item({!r})'.format(self.name)
 aItem = Item("A")
 bItem = Item("B")
@@ -387,7 +387,7 @@ print(aIndexedPriority < bIndexedPriority)  # True
 print(cIndexedPriority < cIndexedPriority)  # False
 ```
 #### 字典关键字排序
-```
+```python
 rows = [
     {'fname': 'Brian', 'lname': 'Jones', 'uid': 1003},
     {'fname': 'David', 'lname': 'Beazley', 'uid': 1002},
@@ -400,7 +400,7 @@ sorted(rows, key=itemgetter("fname"))
 sorted(rows, key=itemgetter("fname", "lname"))
 ```
 #### 不支持原生比较的对象
-```
+```python
 class User:
     def __init__(self, user_id):
         self.user_id = user_id
@@ -418,7 +418,7 @@ def sort_notcompare():
     # [User(3), User(23), User(99)]
 ```
 ### groupby
-```
+```python
 rows = [
     {'address': '5412 N CLARK', 'date': '07/01/2012'},
     {'address': '5148 N CLARK', 'date': '07/04/2012'},
@@ -628,5 +628,5 @@ fruit2.print_color()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTUyNzM5MTBdfQ==
+eyJoaXN0b3J5IjpbNTU5Njc4MzA2LC0xNzE1MjczOTEwXX0=
 -->
