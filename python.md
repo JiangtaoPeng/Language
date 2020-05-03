@@ -477,7 +477,7 @@ print(isinstance(list,Iterable),isinstance(list,Iterator))#True False
 print(isinstance(list_iterator,Iterable),isinstance(list_iterator,Iterator))#True True
 ```
 - 可迭代对象和迭代器实例
-```
+```python
 #!/usr/bin/env python
 # coding=utf-8
 
@@ -628,5 +628,5 @@ fruit2.print_color()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5Njc4MzA2LC0xNzE1MjczOTEwXX0=
+eyJoaXN0b3J5IjpbNzc2Mjg1MDYyLC0xNzE1MjczOTEwXX0=
 -->
