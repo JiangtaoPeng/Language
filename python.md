@@ -626,8 +626,12 @@ fruit2.print_color()
 
 
 ## Python自动化工具
-
+tox
+nox
+invoke
+[https://zhuanlan.zhihu.com/p/105263640](https://zhuanlan.zhihu.com/p/105263640)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwNjc4MTQsLTE3MTUyNzM5MTBdfQ==
+eyJoaXN0b3J5IjpbLTEwMTYwMjg0NTcsODMwNjc4MTQsLTE3MT
+UyNzM5MTBdfQ==
 -->
